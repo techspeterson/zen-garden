@@ -27,7 +27,12 @@ body {
 }
 
 p {
-	margin: 10px 0;
+	margin-bottom: 10px;
+	text-indent: 2em;
+}
+
+p:last-child {
+	margin: 0;
 }
 
 a {
@@ -61,7 +66,7 @@ h2 abbr, a abbr {
 
 .page-wrapper {
 	max-width: 600px;
-	margin: 0 auto;
+	margin: 112px auto 0 auto;
 }
 
 header {
@@ -85,7 +90,7 @@ h1 {
 
 h2 {
 	align-self: flex-end;
-	color: var(--pink);
+	color: var(--purple);
 }
 
 h3 {
@@ -109,11 +114,7 @@ h3::before {
 	background: white;
 	padding: 10px;
 	border-radius: 10px;
-	margin: 10px 0;
-}
-
-.page-wrapper {
-	margin-top: 100px;
+	margin: 20px 0;
 }
 
 .design-selection {
@@ -199,18 +200,18 @@ footer a {
 
 @media only screen and (max-width: 500px) {
 	.page-wrapper {
-		margin-top: 150px;
-		margin-bottom: 200px;
+		margin-top: 144px;
+		margin-bottom: 210px;
 	}
 
 	header {
-		width: 100%;
+		width: 100vw;
 		left: 0;
 		flex-direction: column;
 	}
 
 	.design-selection {
-		width: 100%;
+		width: 100vw;
 		left: 0;
 	}
 }
