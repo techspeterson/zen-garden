@@ -14,7 +14,7 @@
 }
 
 *::selection {
-	background: var(--pink);
+	background: var(--blue);
 	color: white;
 }
 
@@ -99,6 +99,10 @@ h1 {
 	font-size: 50px;
 	line-height: 70px;
 	color: var(--magenta);
+}
+
+h1::before {
+	content: "✧ ";
 }
 
 h2 {
@@ -227,10 +231,18 @@ footer a {
 		width: 100vw;
 		left: 0;
 	}
+
+	h1::before {
+		content: "";
+	}
 }
 
 @media only screen and (max-width: 800px) {
 	.page-wrapper {
 		margin-bottom: 170px;
+	}
+
+	.design-selection ul {
+		justify-content: space-evenly;
 	}
 }
