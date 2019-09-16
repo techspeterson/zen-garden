@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Yesteryear&display=swap');
+
+:root {
+	--orange:#FF6A68;
+	--purple: #925EFA;
+	--blue: #5E73FB;
+	--magenta: #FF4592;
+	--pink: #D353E4;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+*::selection {
+	background: var(--magenta);
+	color: white;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	background: black;
+	background-image: url(./adrien-olichon-X8o-P23flgI-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+p {
+	margin: 10px 0;
+}
+
+a {
+	color: var(--magenta);
+	text-decoration: none;
+	transition: color 1s;
+}
+
+a:hover {
+	color: var(--blue);
+}
+
+abbr {
+	text-decoration-style: dashed;
+	color: var(--blue);
+}
+
+h1, h2, h3 {
+	font-family: 'Yesteryear', cursive;
+}
+
+h2 abbr, a abbr {
+	color: inherit;
+}
+
+.zen-resources, .design-archives, header, .design-selection, footer {
+	background: black;
+	border: 2px solid var(--orange);
+	padding: 10px;
+}
+
+.page-wrapper {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: calc(100% / 2 - 315px);
+	width: 630px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 0 0 20px 20px;
+	z-index: 1;
+	border-top: 0;
+}
+
+h1 {
+	font-size: 50px;
+	line-height: 70px;
+	color: var(--magenta);
+}
+
+h2 {
+	align-self: flex-end;
+	color: var(--pink);
+}
+
+h3 {
+	font-size: 24px;
+	color: var(--purple);
+	position: relative;
+	left: 60px;
+}
+
+h3::before {
+	background: var(--orange);
+	height: 2px;
+	content: "";
+	width: 50px;
+	position: absolute;
+	left: -60px;
+	top: 14px;
+}
+
+.summary, .preamble, .explanation, .participation, .benefits, .requirements {
+	background: white;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 10px 0;
+}
+
+.page-wrapper {
+	margin-top: 100px;
+}
+
+.design-selection {
+	position: fixed;
+	bottom: 0;
+	left: 10px;
+	width: calc(100vw - 40px);
+	border-radius: 20px 20px 0 0;
+	color: var(--blue);
+	z-index: 1;
+	border-bottom: 0;
+}
+
+.design-selection a, footer a {
+	color: var(--pink);
+}
+
+.design-selection a:hover, footer a:hover {
+	transform: scale(1.1);
+	color: var(--pink);
+}
+
+.design-selection ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+.design-selection li {
+	list-style-type: none;
+	font-size: 12px;
+}
+
+.design-name {
+	display: block;
+	font-family: 'Yesteryear', cursive;
+	font-size: 20px;
+}
+
+.design-archives {
+	border-radius: 20px;
+	margin-right: 10px;
+}
+
+.design-archives ul, .zen-resources ul {
+	padding: 0;
+	text-align: center;
+}
+
+.design-archives li, .zen-resources li {
+	list-style-type: none;
+}
+
+.zen-resources {
+	border-radius: 20px;
+}
+
+.zen-resources ul {
+	padding: 0;
+}
+
+footer {
+	text-align: center;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+footer a {
+  font-family: 'Yesteryear', cursive;
+}
+
+.wrapper {
+	margin-bottom: 120px;
+	display: flex;
+}
+
+.zen-resources, .design-archives {
+	width: calc(50% - 5px);
+}
+
+@media only screen and (max-width: 500px) {
+	.page-wrapper {
+		margin-top: 150px;
+		margin-bottom: 200px;
+	}
+
+	header {
+		width: 100%;
+		left: 0;
+		flex-direction: column;
+	}
+
+	.design-selection {
+		width: 100%;
+		left: 0;
+	}
+}
